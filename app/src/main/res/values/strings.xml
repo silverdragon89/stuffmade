@@ -4,7 +4,10 @@
     <string name="welcome_message">Welcome to a PAD plus egg calculator</string>
     <string name="main_monsters">Main Monsters</string>
     <string name="bank_monsters">Monsters in plus egg bank</string>
-
+    <string name="monster_name">Monster Name: </string>
+    <string name="hp">HP: </string>
+    <string name="atk">Attack: </string>
+    <string name="rcv">Recovery: </string>
 
 
 </resources>

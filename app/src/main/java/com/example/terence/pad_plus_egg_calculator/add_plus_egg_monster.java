@@ -9,8 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View.MeasureSpec;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -62,8 +60,8 @@ public class add_plus_egg_monster extends AppCompatActivity {
 
         //getting adapter to work via http://stackoverflow.com/questions/17693578/android-how-to-display-2-listviews-in-one-activity-one-after-the-other
         // by Hiren Patel
-        mainListView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, main_monsters));
-        bankListView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, main_monsters));
+        mainListView.setAdapter(new ArrayAdapter<Monster>(this, android.R.layout.simple_list_item_1, main_monsters));
+        bankListView.setAdapter(new ArrayAdapter<Monster>(this, android.R.layout.simple_list_item_1, main_monsters));
         //current errors.  cannot resolve constructor
 
         ListUtils.setDynamicHeight(mainListView);
