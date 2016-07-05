@@ -13,21 +13,33 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <GridView
+    <TextView
         android:layout_width="match_parent"
-        android:id="@+id/mainMonster"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@color/background_floating_material_light"
-        android:layout_below="@+id/textView"
-        android:layout_height="wrap_content" />
-    <GridView
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/main_monsters" />
+
+    <ListView
+        android:id="@+id/listView1"
         android:layout_width="match_parent"
-        android:id="@+id/bankMonster"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@color/background_floating_material_light"
-        android:layout_below="@+id/textView"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="#B29090" >
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:text="@string/bank_monsters" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="#4A9C67" >
+    </ListView>
 
 </RelativeLayout>

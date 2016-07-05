@@ -2,6 +2,9 @@
     <string name="app_name">PAD_plus_egg_calculator</string>
     <string name="action_settings">Settings</string>
     <string name="welcome_message">Welcome to a PAD plus egg calculator</string>
-    <string name="welcome_2"></string>
+    <string name="main_monsters">Main Monsters</string>
+    <string name="bank_monsters">Monsters in plus egg bank</string>
+
+
 
 </resources>
