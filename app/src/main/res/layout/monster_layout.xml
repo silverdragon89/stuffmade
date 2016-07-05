@@ -16,10 +16,8 @@
         android:id="@+id/textViewId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignLeft="@+id/textViewTitle"
  />
 
     <TextView
@@ -27,9 +25,6 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="44dp"
         android:layout_alignParentRight="true"
         />
 
@@ -38,18 +33,20 @@
         android:id="@+id/textViewHp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
-        android:layout_alignParentRight="true"
-        android:layout_above="@id/textViewAtk" />
+        android:layout_below="@id/textViewTitle"/>
 
+    <TextView
+        android:id="@+id/hpValue"
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewHp"/>
 
     <TextView
         android:text="@string/atk"
         android:id="@+id/textViewAtk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/textViewHp" />
 
@@ -58,11 +55,7 @@
         android:id="@+id/textViewRcv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginStart="7dp"
         android:layout_alignParentRight="true"
-
         android:layout_below="@+id/textViewAtk" />
 
 </RelativeLayout>
