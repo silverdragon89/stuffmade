@@ -6,9 +6,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.View.MeasureSpec;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -21,16 +21,16 @@ import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 
-public class add_plus_egg_monster extends AppCompatActivity {
+public class MonsterListActivity extends AppCompatActivity {
     private ListView mainListView, bankListView;
 
     //test monsters
-    private Monster bastet = new Monster("Bastet", 494, 50, 50, 50);
-    private Monster lucifer = new Monster("Archangel Lucifer", 628, 20, 10, 20);
+    private MonsterBase bastet = new MonsterBase(494, 50, 50, 50);
+    private MonsterBase lucifer = new MonsterBase(628, 20, 10, 20);
 
     //array of monsters
-    private Monster[] main_monsters = {bastet};
-    private Monster[] bank_monsters = {lucifer};
+    private MonsterBase[] main_monsters = {bastet};
+    private MonsterBase[] bank_monsters = {lucifer};
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -60,8 +60,8 @@ public class add_plus_egg_monster extends AppCompatActivity {
 
         //getting adapter to work via http://stackoverflow.com/questions/17693578/android-how-to-display-2-listviews-in-one-activity-one-after-the-other
         // by Hiren Patel
-        mainListView.setAdapter(new ArrayAdapter<Monster>(this, android.R.layout.simple_list_item_1, main_monsters));
-        bankListView.setAdapter(new ArrayAdapter<Monster>(this, android.R.layout.simple_list_item_1, main_monsters));
+        mainListView.setAdapter(new ArrayAdapter<MonsterBase>(this, android.R.layout.simple_list_item_1, main_monsters));
+        bankListView.setAdapter(new ArrayAdapter<MonsterBase>(this, android.R.layout.simple_list_item_1, main_monsters));
         //current errors.  cannot resolve constructor
 
         ListUtils.setDynamicHeight(mainListView);
@@ -99,7 +99,7 @@ public class add_plus_egg_monster extends AppCompatActivity {
      */
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
-                .setName("add_plus_egg_monster Page") // TODO: Define a title for the content shown.
+                .setName("MonsterListActivity Page") // TODO: Define a title for the content shown.
                 // TODO: Make sure this auto-generated URL is correct.
                 .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
                 .build();

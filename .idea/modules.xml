@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PAD_plus_egg_calculator.iml" filepath="$PROJECT_DIR$/PAD_plus_egg_calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stuffmade.iml" filepath="$PROJECT_DIR$/stuffmade.iml" />
     </modules>
   </component>
 </project>
